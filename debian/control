@@ -1,0 +1,19 @@
+Source: apulse
+Section: sound
+Priority: optional
+Maintainer: Boris Pek <tehnick@debian.org>
+Build-Depends: cmake, debhelper (>= 9)
+Homepage: https://github.com/i-rinat/apulse
+Vcs-Git: git://github.com/tehnick/apulse-debian.git
+Vcs-Browser: https://github.com/tehnick/apulse-debian
+Standards-Version: 3.9.6
+
+Package: apulse
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: PulseAudio emulation for ALSA
+ This program may be useful for users who do not want install and use PulseAudio
+ audio server on own systems, but nevertheless want to use some programs which
+ require PulseAudio for their work (for example, Skype and some other).
+ .
+ Usage: apulse <program-name> [parameters]
